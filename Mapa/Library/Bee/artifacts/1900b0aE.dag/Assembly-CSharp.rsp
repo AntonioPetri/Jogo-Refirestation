@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -383,6 +382,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/amusedART/StoneMonster/Script/Animation_Test.cs"
+"Assets/Scripts/bala colisao.cs"
+"Assets/Scripts/Bala1.cs"
 "Assets/Scripts/Camera.cs"
 "Assets/Scripts/Inimigo.cs"
 "Assets/Scripts/MovementXY.cs"
