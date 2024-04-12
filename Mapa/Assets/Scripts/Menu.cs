@@ -18,6 +18,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public Transform pauseMenu;
     
     private void Update()
@@ -28,11 +33,13 @@ public class Menu : MonoBehaviour
             {
                 pauseMenu.gameObject.SetActive(false);
                 Time.timeScale = 1;
+                CameraLock();
             }
             else
             {
                 pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
+                CameraUnlock();
             }
         }
     }
@@ -41,5 +48,18 @@ public class Menu : MonoBehaviour
     {
         pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1;
+        CameraLock();
+    }
+
+    private void CameraLock()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void CameraUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

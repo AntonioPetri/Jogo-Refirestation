@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-   public float sensX;
-   public float sensY;
+    public float sensX;
+    public float sensY;
 
     public Transform orientation;
 
@@ -28,6 +28,6 @@ public class Camera : MonoBehaviour
         xRotation = Math.Clamp(xRotation, -90, 90);
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        orientation.rotation = Quaternion.Euler(0, yRotation, 0);     
     }
 }
