@@ -27,7 +27,9 @@ public class Bala1 : MonoBehaviour
         ShootAtPlayer();
     }
 
-    void ShootAtPlayer()
+    
+
+            void ShootAtPlayer()
     {
         bulletTime -= Time.deltaTime;
 
