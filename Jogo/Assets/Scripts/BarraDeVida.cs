@@ -5,17 +5,6 @@ using UnityEngine.UI;
 public class BarraDeVida : MonoBehaviour
 {
     [SerializeField]private Image BarraDeVidaImage;
-   
-    void Start()
-    {
-        
-    }
-    
-
-    void Update()
-    {
-        
-    }
 
     public void AlterarBarraDeVida(int vidaAtual, int VidaMaxima)
     {

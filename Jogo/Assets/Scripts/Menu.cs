@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] private Vida vida;
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
@@ -24,7 +25,18 @@ public class Menu : MonoBehaviour
     }
 
     public Transform pauseMenu;
-    
+    public void CameraLock()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void CameraUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -51,15 +63,21 @@ public class Menu : MonoBehaviour
         CameraLock();
     }
 
-    private void CameraLock()
+    public Transform gameOver;
+    public void GameOver()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (vida.GetComponent<Vida>().vidaAtual <= 0)
+        {
+            gameOver.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            CameraUnlock();
+        }          
+    }
+    public void RestartGame()
+    {
+        gameOver.gameObject.SetActive(false);
+        Time.timeScale = 1;
+        CameraLock();
     }
 
-    private void CameraUnlock()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
 }

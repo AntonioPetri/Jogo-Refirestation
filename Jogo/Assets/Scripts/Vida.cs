@@ -2,31 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VidaInimigo: MonoBehaviour
+public class Vida: MonoBehaviour
 {
-    private int vidaAtual;
+    public int vidaAtual;
     private int vidaTotal = 100;
-    [SerializeField]private BarraDeVida barraDeVida;
+    [SerializeField] private BarraDeVida barraDeVida;
+    [SerializeField] private Menu menu;
+
     void Start()
     {
         vidaAtual = vidaTotal;
 
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaTotal);
     }
-
-    
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (vidaAtual <= 0)
         {
-            AplicarDano(10);    
-        }
 
+        }
     }
 
-    private void AplicarDano (int dano)
+    public void AplicarDano (int dano)
     {
         vidaAtual -= 10;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaTotal);
     }
+
+
 }

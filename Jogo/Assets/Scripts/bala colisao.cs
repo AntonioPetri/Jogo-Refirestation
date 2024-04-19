@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class balacolisao : MonoBehaviour
 {
-     void OnTriggerEnter (Collider other)
+    [SerializeField] private Vida vida;
+
+    void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
+            other.GetComponent<Vida>().AplicarDano(10);
             Destroy(gameObject);
         }
-        
     }
 }
