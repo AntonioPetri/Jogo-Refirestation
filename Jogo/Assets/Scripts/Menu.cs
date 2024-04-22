@@ -66,7 +66,7 @@ public class Menu : MonoBehaviour
     public Transform gameOver;
     public void GameOver()
     {
-        if (vida.GetComponent<Vida>().vidaAtual <= 0)
+        if (vida.GetComponent<Vida>().vidaTotal <= 0)
         {
             gameOver.gameObject.SetActive(true);
             Time.timeScale = 0;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Vida: MonoBehaviour
 {
     public int vidaAtual;
-    private int vidaTotal = 100;
+    public int vidaTotal = 100;
     [SerializeField] private BarraDeVida barraDeVida;
     [SerializeField] private Menu menu;
 
