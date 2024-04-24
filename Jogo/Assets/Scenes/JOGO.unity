@@ -646,7 +646,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1170967542}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ResumeGame
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3348,7 +3348,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207103709}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2f3356fc4c350de46b643dd3d8e1f9bf, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 64
@@ -4046,7 +4046,7 @@ Transform:
   m_GameObject: {fileID: 1548663785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5057,6 +5057,7 @@ MonoBehaviour:
   vidaTotal: 100
   barraDeVida: {fileID: 1002008966}
   menu: {fileID: 0}
+  Morto: 0
 --- !u!1001 &1956898858
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Vida: MonoBehaviour
 {
-    public int vidaAtual;
+    public int vidaAtual = 100;
     public int vidaTotal = 100;
     [SerializeField] private BarraDeVida barraDeVida;
     [SerializeField] private Menu menu;
+    public bool Morto = false;
 
     void Start()
     {
@@ -17,17 +19,20 @@ public class Vida: MonoBehaviour
     }
     private void Update()
     {
-        if (vidaAtual <= 0)
-        {
-
-        }
+        Console.WriteLine(Morto);
     }
+
 
     public void AplicarDano (int dano)
     {
         vidaAtual -= 10;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaTotal);
+        if (vidaAtual <= 0)
+        {
+            Morto = true;
+        }
     }
+
 
 
 }

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private Vida vida;
+    [SerializeField] public Vida vida;
+    //public bool Morto = vida.Morto;
+
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
@@ -25,6 +27,7 @@ public class Menu : MonoBehaviour
     }
 
     public Transform pauseMenu;
+    public Transform gameOver;
     public void CameraLock()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,6 +57,15 @@ public class Menu : MonoBehaviour
                 CameraUnlock();
             }
         }
+        if (vida.Morto)
+        {
+            if (pauseMenu.gameObject.activeSelf)
+            {
+                gameOver.gameObject.SetActive(true);
+                Time.timeScale = 0;
+                CameraUnlock();
+            }
+        }
     }
 
     public void ResumeGame()
@@ -63,21 +75,15 @@ public class Menu : MonoBehaviour
         CameraLock();
     }
 
-    public Transform gameOver;
-    public void GameOver()
-    {
-        if (vida.GetComponent<Vida>().vidaTotal <= 0)
-        {
-            gameOver.gameObject.SetActive(true);
-            Time.timeScale = 0;
-            CameraUnlock();
-        }          
-    }
+    
+    //public void GameOver()
+    //{
+          
+        
+    //}
     public void RestartGame()
     {
-        gameOver.gameObject.SetActive(false);
-        Time.timeScale = 1;
-        CameraLock();
+        SceneManager.LoadSceneAsync(1);
     }
 
 }
