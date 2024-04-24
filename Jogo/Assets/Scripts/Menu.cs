@@ -47,7 +47,7 @@ public class Menu : MonoBehaviour
     // ESC pausa e morte da GameOver
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) && FindObjectOfType<Vida>().Morto == false)
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (pauseMenu.gameObject.activeSelf)
             {
