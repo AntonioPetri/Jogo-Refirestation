@@ -7,7 +7,7 @@ public class Inimigo : MonoBehaviour
     public float speed = 3f; // Velocidade de movimento do inimigo
     public float stoppingDistance = 2f; // Distância de parada para começar a perseguir o jogador
     private Transform target; // Referência ao transform do jogador
-
+    public int vidaInimigo = 10;
     void Start()
     {
         // Encontrar o transform do jogador
@@ -37,6 +37,18 @@ public class Inimigo : MonoBehaviour
 
             // Ajustar a rotação para olhar na direção do jogador (opcional)
             transform.LookAt(target);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.tag == "Bullet")
+        {
+            vidaInimigo -= 10;
+        }
+        if (vidaInimigo<= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }

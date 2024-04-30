@@ -6,22 +6,23 @@ public class Bullet : MonoBehaviour
 {
    
     public Rigidbody rb;
-    public GameObject Hit;
-    public GameObject Fire;
+    
 
     
     void Start()
     {
-        rb.AddForce(transform.forward * 2000);
-        GameObject A = Instantiate(Fire, this.transform.position, Quaternion.identity);
-         Destroy(A, 2);
+        rb.AddForce(transform.forward * 1000);
+      
+       ;
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("passei aqui");
-        GameObject B = Instantiate(Hit, this.transform.position, Quaternion.identity);
-        Destroy(B, 2);
-        Destroy(this.gameObject);
+        if (other.transform.tag == "enemy")
+        {
+            Destroy(this.gameObject);
+        }
+      
+        
     }
 }
