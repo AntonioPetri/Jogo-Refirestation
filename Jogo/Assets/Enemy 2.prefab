@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   stoppingDistance: 2
-  vidaInimigo: 50
+  vidaInimigo: 10
 --- !u!114 &4161819040853710601
 MonoBehaviour:
   m_ObjectHideFlags: 0

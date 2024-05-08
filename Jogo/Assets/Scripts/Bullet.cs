@@ -11,14 +11,12 @@ public class Bullet : MonoBehaviour
     
     void Start()
     {
-        rb.AddForce(transform.forward * 1000);
-      
-       ;
+       rb.AddForce(transform.forward * 3000);     
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "enemy")
+        if (other.transform.tag == "enemy" || other.transform.tag == "Enemy")
         {
             Destroy(this.gameObject);
         }

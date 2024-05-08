@@ -27,6 +27,7 @@ public class WaveSpawner : MonoBehaviour {
 
     private SpawnState state = SpawnState.COUNTING;
 
+    public float Horda = 1;
     void Start()
     {
         if (spawnPoints.Length == 0)
@@ -80,6 +81,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             nextWave ++;
         }
+        Horda++;
     }
 
     bool EnemyIsAlive()
