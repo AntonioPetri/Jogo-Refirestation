@@ -5,8 +5,8 @@ using UnityEngine;
 public class Inimigo : MonoBehaviour
 {
     public float speed = 3f; // Velocidade de movimento do inimigo
-    public float stoppingDistance = 2f; // Distância de parada para começar a perseguir o jogador
-    private Transform target; // Referência ao transform do jogador
+    public float stoppingDistance = 2f; // Distancia de parada para comecar a perseguir o jogador
+    private Transform target; // Referencia ao transform do jogador
     public int vidaInimigo = 10;
     void Start()
     {
@@ -23,19 +23,19 @@ public class Inimigo : MonoBehaviour
             return;
         }
 
-        // Verificar a distância entre o inimigo e o jogador
+        // Verificar a distancia entre o inimigo e o jogador
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-        // Se a distância for maior que a distância de parada, seguir o jogador
+        // Se a distancia for maior que a distancia de parada, seguir o jogador
         if (distanceToTarget > stoppingDistance)
         {
-            // Calcular a direção para o jogador
+            // Calcular a direcao para o jogador
             Vector3 direction = (target.position - transform.position).normalized;
 
-            // Mover o inimigo na direção do jogador
+            // Mover o inimigo na direcao do jogador
             transform.position += direction * speed * Time.deltaTime;
 
-            // Ajustar a rotação para olhar na direção do jogador (opcional)
+            // Ajustar a rotacao para olhar na direcao do jogador (opcional)
             transform.LookAt(target);
         }
     }
