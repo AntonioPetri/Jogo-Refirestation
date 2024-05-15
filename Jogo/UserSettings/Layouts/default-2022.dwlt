@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 40
+  controlID: 48
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 39
+  controlID: 47
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,23 +347,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 26b40000
+      m_SelectedIDs: 74440000
       m_LastClickedID: 0
-      m_ExpandedIDs: b46ffeff6ab1feff18b2feff56b3feff
+      m_ExpandedIDs: d6f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: FirePosition
-        m_OriginalName: FirePosition
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -85654
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -418,7 +418,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/LowPoly Guns/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -426,16 +426,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/LowPoly Guns/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 67
-  m_LastProjectPath: C:\Users\24025873\Documents\GitHub\Jogo-Refirestation\Jogo
+  m_LastProjectPath: C:\Users\24026144.GLOBAL\Documents\GitHub\Jogo-Refirestation\Jogo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 26b40000
-    m_LastClickedID: 46118
-    m_ExpandedIDs: 000000001eb4000000ca9a3b
+    scrollPos: {x: 0, y: 68}
+    m_SelectedIDs: fc690000
+    m_LastClickedID: 27132
+    m_ExpandedIDs: 000000004c620000f069000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -463,7 +463,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000004c620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,9 +890,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: -337}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 2
       id: AINavigationOverlay
       index: 9
       layout: 4
@@ -935,9 +935,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 500.771, y: 10.343261, z: 515.0042}
+    m_Target: {x: 501.73276, y: 11.927691, z: 508.96674}
     speed: 2
-    m_Value: {x: 500.771, y: 10.343261, z: 515.0042}
+    m_Value: {x: 501.73276, y: 11.927691, z: 508.96674}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -983,9 +983,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.15436246, y: -0.8025956, z: 0.23503397, w: 0.5263306}
+    m_Target: {x: 0.16694574, y: -0.5096393, z: 0.10127228, w: 0.83808887}
     speed: 2
-    m_Value: {x: 0.154343, y: -0.8024944, z: 0.23500434, w: 0.5262642}
+    m_Value: {x: 0.1669247, y: -0.5095751, z: 0.101259515, w: 0.8379833}
   m_Size:
     m_Target: 0.41261947
     speed: 2

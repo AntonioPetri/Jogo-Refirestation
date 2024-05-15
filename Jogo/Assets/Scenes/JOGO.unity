@@ -1427,11 +1427,11 @@ MonoBehaviour:
     count: 3
     rate: 3
   - name: Round 2
-    enemy: {fileID: 5390385953366288051, guid: b1eab1688da0fb84b8a57636b62e3258, type: 3}
+    enemy: {fileID: 5390385953366288051, guid: fe214d28aac05ef4ab230ef04f7b334c, type: 3}
     count: 5
     rate: 1
   - name: Round 3
-    enemy: {fileID: 5390385953366288051, guid: c9265a825a29ffa439b83cca2dbdb2f2, type: 3}
+    enemy: {fileID: 5390385953366288051, guid: fe214d28aac05ef4ab230ef04f7b334c, type: 3}
     count: 8
     rate: 2
   spawnPoints:
@@ -2342,6 +2342,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a19d2da931e9a7946baefbab93b19e76, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a19d2da931e9a7946baefbab93b19e76, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5440,6 +5444,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3e56fba265c6bc44f9083bd85e6c711f, type: 2}
+    - target: {fileID: 6296265211222954596, guid: 92f8516927c3ac944a1e0927af5e4d83, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296265211222954596, guid: 92f8516927c3ac944a1e0927af5e4d83, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9042995857613689698, guid: 92f8516927c3ac944a1e0927af5e4d83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 483.93793
@@ -5575,6 +5587,10 @@ PrefabInstance:
       propertyPath: m_Direction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530052000825302061, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3334127406957867314, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 492
@@ -5619,9 +5635,45 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3e56fba265c6bc44f9083bd85e6c711f, type: 2}
+    - target: {fileID: 3804398492464706814, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309324421347977688, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309730553706483588, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744581035570465174, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789993728855740684, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974020289324976185, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5678288756455831200, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678288756455831200, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571527130184262092, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8256422265407084861, guid: e088c6e724c013041b168943b81fbbf4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
