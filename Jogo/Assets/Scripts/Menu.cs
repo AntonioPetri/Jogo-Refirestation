@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     [SerializeField] public Vida vida;
+    [SerializeField] TextMeshProUGUI HordaFinal, PontoFinal;
 
     // Função dos botões do menu principal
     public void PlayGame()
@@ -63,13 +65,17 @@ public class Menu : MonoBehaviour
             }
         }
 
-        // DESCOMENTAR PARA O GAMEROVER FUNCIONAR <----------------------
-        //if (FindObjectOfType<Vida>().Morto == true)
-        //{
-        //    gameOver.gameObject.SetActive(true);
-        //    Time.timeScale = 0;
-        //    CameraUnlock();
-        //}
+        // DESCOMENTAR PARA O GAMEROVER FUNCIONAR < ----------------------
+        if (FindObjectOfType<Vida>().Morto == true)
+        {
+            gameOver.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            CameraUnlock();
+            
+            HordaFinal.text = $"Você chegou até a horda {FindObjectOfType<WaveSpawner>().Horda}";
+            PontoFinal.text = $"Pontuação final: {FindObjectOfType<BarraDeVida>().Pontuacao}";
+            
+        }
     }
     // Tira o pause
     public void ResumeGame()

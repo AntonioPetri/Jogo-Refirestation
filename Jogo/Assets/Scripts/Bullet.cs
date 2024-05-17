@@ -19,8 +19,14 @@ public class Bullet : MonoBehaviour
         if (other.transform.tag == "enemy" || other.transform.tag == "Enemy")
         {
             Destroy(this.gameObject);
+            
         }
-      
-        
+        if (other.transform.tag == "Enemy")
+        {
+            FindObjectOfType<BarraDeVida>().Pontuacao += 100;
+        }
+
+
+
     }
 }

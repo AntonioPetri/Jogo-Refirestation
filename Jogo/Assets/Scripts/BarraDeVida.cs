@@ -6,7 +6,8 @@ using TMPro;
 public class BarraDeVida : MonoBehaviour
 {
     [SerializeField]private Image BarraDeVidaImage;
-    [SerializeField] TextMeshProUGUI HordaAtual;
+    [SerializeField] TextMeshProUGUI HordaAtual, PONTUACAO;
+    public int Pontuacao = 0;
 
     public void AlterarBarraDeVida(int vidaAtual, int VidaMaxima)
     {
@@ -16,7 +17,9 @@ public class BarraDeVida : MonoBehaviour
     private void Update()
     {
         HordaAtual.text = $"Horda: {FindObjectOfType<WaveSpawner>().Horda}";
+        PONTUACAO.text = $"Pontuação: {Pontuacao}";
     }
+
 
 
 }
