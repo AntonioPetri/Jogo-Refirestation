@@ -19,7 +19,11 @@ public class Camera : MonoBehaviour
         // Trava o cursor e deixa ele invisivel
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        sensX = PlayerPrefs.GetFloat("Sensibilidade");
         sensY = sensX;
+        
+
     }
     private void Update()
     {

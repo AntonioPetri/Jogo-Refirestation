@@ -7,28 +7,31 @@ using UnityEngine.Audio;
 public class Options : MonoBehaviour
 {
 
-    public Slider Volume, Sensi;
-
+    public Slider VolumeSlider, SensiSlider;
+    public AudioMixer audioMixer;
+    public float volumevalue;
+    public float sensi;
 
     void Start()
     {
-        
+        VolumeSlider.value = PlayerPrefs.GetFloat("Volume");
+        SensiSlider.value = PlayerPrefs.GetFloat("Sensibilidade");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        audioMixer.SetFloat("Volume", volumevalue);
+        PlayerPrefs.SetFloat("Volume", volumevalue);
+        PlayerPrefs.SetFloat("Sensibilidade", sensi);
     }
 
     public void ChangeVolume(float volume)
     {
-        Debug.Log(volume);
+        volumevalue = volume;
     }
 
-    public void ChangeSensi(float sensi)
+    public void ChangeSensi(float sensibility)
     {
-        FindObjectOfType<Camera>().sensX = sensi;
-        
+         sensi = sensibility;
     }
 }
